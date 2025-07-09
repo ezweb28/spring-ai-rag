@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-ai-rag
+#Pass API key as environment variable, e.g. -DOPENAI_API_KEY=your-api-key
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+sfg:
+  aiapp:
+    vectorStorePath: C:\\tmp\\vectorstore.json
+    documentsToLoad:
+      - classpath:/movies500.csv
